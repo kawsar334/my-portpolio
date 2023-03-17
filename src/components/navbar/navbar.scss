@@ -1,0 +1,49 @@
+@import "../../global.scss";
+
+.navbar{
+    background-color: rgba(255,255,255,0.1);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    padding: 5px;
+    right: 0;
+    z-index: 999;
+    &.active{
+        background-color: #323131;
+    }
+    
+    .navWrapper{
+        width: 95%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        .logo{
+            font-size: 25px;
+            color: $white;
+        }
+        .navright{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            a{
+                background-color: rgba(255,255,255,0.5);
+                padding: 5px ;
+                border-radius: 5px;
+                color: $white;
+            }
+            
+            i{
+                color: $white;
+                cursor: pointer;
+                font-size: 25px;
+                transition: all 1s ease;
+    
+            }
+            
+        }
+
+    }
+}
