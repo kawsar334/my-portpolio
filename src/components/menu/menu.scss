@@ -45,8 +45,9 @@
         flex-direction: column;
         gap: 20px;
         li{
+            overflow: hidden;
             a{
-                font-size: 30px;
+                font-size: 25px;
                 color: $white;
             }
         }

@@ -11,7 +11,7 @@ const About = () => {
     <div className="about" id="about">
         <div className="aboutwrapper">
         <div className="aboutleft">
-                  <img src="/images/mee.png" alt="Loading..." data-aos="fade-right" />
+                  <img src="/imgs/mee.png" alt="Loading..." data-aos="fade-right" />
         </div>
               <div className="aboutright" data-aos="fade-left">
             

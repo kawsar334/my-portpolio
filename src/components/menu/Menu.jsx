@@ -6,7 +6,7 @@ const Menu = ({open, setOpen}) => {
      {  
     <div className={open ?"menu activemenu" :"menu"}>
                   <i className="fa-solid fa-xmark " onClick={() => setOpen(!open)}></i>
-        <img src="/images/mee.png" alt="" />
+        <img src="/imgs/mee.png" alt="" />
         <ul>
             <li><a href="#intro" onClick={()=>setOpen(!open)}>Home</a></li>
               <li><a href="#projects" onClick={()=>setOpen(!open)}>Projects</a></li>

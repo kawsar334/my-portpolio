@@ -11,18 +11,9 @@ export const frontend = [
         desc: "Responsive Food ordering UI/ux design using React.js functional component react-router-dom , Sass,react infinit-slide-carusel ",
         img2: "/imgs/pizza.png"
     },
+  
     {
         id: 2,
-        title: "Social Media App",
-        img:
-            "https://www.primebusiness.africa/wp-content/uploads/2023/03/social-icons.jpg",
-        demo: "https://fbv1.netlify.app/",
-        github: "https://github.com/kawsar334/facebook-clone/tree/main/src",
-        desc: "Responsive facebook design using React.js functional component react-router-dom , Sass, ",
-        img2: "/imgs/facebook.png"
-    },
-    {
-        id: 3,
         title: "Ecommerce ui Design",
         img:
             "https://d1u4v6449fgzem.cloudfront.net/2020/03/The-Ecommerce-Business-Model-Explained.jpg",
@@ -32,27 +23,7 @@ export const frontend = [
         img2: "/imgs/ecom.png"
     },
     {
-        id: 4,
-        title: "Netflix design",
-        img:
-            "https://i.ytimg.com/vi/ZMak63mHq5Y/maxresdefault.jpg",
-        demo: "https://shimmering-lolly-a958cf.netlify.app/",
-        github: "https://github.com/kawsar334/netflix-ui-design-",
-        desc: "Netflix design using react js functional component, React-router-dom , sass, infinite-react-carousel, (Computer Screen )",
-        img2: "/imgs/netflix.png"
-    },
-    {
-        id: 5,
-        title: "fiverr ui design ",
-        img:
-            "https://mms.businesswire.com/media/20211108005361/en/924401/5/Press-Page.jpg",
-        demo: "https://gleaming-sherbet-9b9972.netlify.app/",
-        github: "https://github.com/kawsar334/fiver-clone-ui",
-        desc: "fiverr clone using react js functioanal component, Sass,infinite-react-carousel, react -router-dom , (computer screen) ",
-        img2: "/imgs/fiver.png"
-    },
-    {
-        id: 6,
+        id: 3,
         title: "Hotel reservation ui design ",
         img:
             "https://media.radissonhotels.net/image/metropolitan-hotel-sofia-a-member-of-radisson-individuals/exteriorview/16256-145921-f72742573_3xl.jpg?impolicy=Card&gravity=North",
@@ -62,7 +33,18 @@ export const frontend = [
         img2: "/imgs/booking.png"
     },
     {
-        id: 7,
+        id: 4,
+        title: "fiverr ui design ",
+        img:
+            "https://mms.businesswire.com/media/20211108005361/en/924401/5/Press-Page.jpg",
+        demo: "https://gleaming-sherbet-9b9972.netlify.app/",
+        github: "https://github.com/kawsar334/fiver-clone-ui",
+        desc: "fiverr clone using react js functioanal component, Sass,infinite-react-carousel, react -router-dom , (computer screen) ",
+        img2: "/imgs/fiver.png"
+    },
+   
+    {
+        id: 5,
         title: "Blog ui design ",
         img:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-oj_Vi4vpcTjA9FHrEHfCu55viohgsgL4fw&usqp=CAU",
@@ -72,7 +54,7 @@ export const frontend = [
         img2: "/imgs/blog.png"
     },
     {
-        id: 8,
+        id: 6,
         title: "Youtube clone ",
         img:
             "https://yt3.googleusercontent.com/584JjRp5QMuKbyduM_2k5RlXFqHJtQ0qLIPZpwbUjMJmgzZngHcam5JMuZQxyzGMV5ljwJRl0Q=s900-c-k-c0x00ffffff-no-rj",
@@ -82,7 +64,7 @@ export const frontend = [
         img2: "/imgs/youtube.png"
     },
     {
-        id: 9,
+        id: 7,
         title: "Admin pannel design  ",
         img:
             "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
@@ -90,6 +72,26 @@ export const frontend = [
         github: "https://github.com/kawsar334/admin-panel-/tree/master",
         desc: "admin pannel using react.js react-roter-dom  and css  ",
         img2: "/imgs/admin.png"
+    },
+    {
+        id: 8,
+        title: "Social Media App",
+        img:
+            "https://www.primebusiness.africa/wp-content/uploads/2023/03/social-icons.jpg",
+        demo: "https://fbv1.netlify.app/",
+        github: "https://github.com/kawsar334/facebook-clone/tree/main/src",
+        desc: "Responsive facebook design using React.js functional component react-router-dom , Sass, ",
+        img2: "/imgs/facebook.png"
+    },
+    {
+        id: 9,
+        title: "Netflix design",
+        img:
+            "https://i.ytimg.com/vi/ZMak63mHq5Y/maxresdefault.jpg",
+        demo: "https://shimmering-lolly-a958cf.netlify.app/",
+        github: "https://github.com/kawsar334/netflix-ui-design-",
+        desc: "Netflix design using react js functional component, React-router-dom , sass, infinite-react-carousel, (Computer Screen )",
+        img2: "/imgs/netflix.png"
     },
 
     {
@@ -110,7 +112,7 @@ export const frontend = [
 export const fullstack = [
     {
         id: 1,
-        title: " Mern Web Social Media App",
+        title: " Mern  Social Media App",
         img: "https://blog.hootsuite.com/wp-content/uploads/2021/05/all-apps-1.png",
         demo: "",
         github: "https://github.com/kawsar334/fullstack-facebook-",

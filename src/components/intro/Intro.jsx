@@ -30,7 +30,8 @@ const Intro = () => {
             loop
           />
                </h3>
-              <p data-aos="fade-right">A self-motivated and enthusiastic web developer. To gain confidence and fame using my potential in the field of web development and express my innovative creative skills for self and company growth. I always like to learn new things and have experience with new stuff.</p>
+              <p data-aos="fade-right">A self-motivated and enthusiastic web developer. To gain confidence and fame using my potential in
+               the field of web development and express my innovative creative skills for self and company growth. I always like to learn new things and have experience with new stuff.</p>
               <a href="#projects" data-aos="fade-left">View Work <i className="fa-solid fa-chevron-down"></i></a>
           </div>
 
