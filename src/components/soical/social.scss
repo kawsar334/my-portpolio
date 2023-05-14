@@ -19,6 +19,7 @@
 
         i{
             font-size: 20px;
+            margin-left: 10px;
 
             
         }
@@ -26,10 +27,11 @@
             transition: all 0.5s ease;
             font-size: 14px;
             display: none;
+
         }
         &:hover{
-            width: max-content;
             border-top-right-radius: 20px;
+            width: max-content;
             border-bottom-right-radius: 20px;
             span{
                 display: block;
@@ -54,4 +56,5 @@
     .phone{
         background-color: rgb(255,255,255,0.4);
     }
+    
 }

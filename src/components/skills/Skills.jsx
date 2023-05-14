@@ -11,9 +11,9 @@ const Skills = () => {
 
   const data = [
     {
-      id:1,
-      title:"Html5",
-      img:"https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png"
+      id: 1,
+      title: "Html5",
+      img: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png"
     },
     {
       id: 2,
@@ -50,6 +50,11 @@ const Skills = () => {
       title: "Bootstrap",
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"
     },
+    // {
+    //   id: 9,
+    //   title: "Laravel",
+    //   img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
+    // },
   ]
   return (
     <div className="skills" id="skills" data-aos="fade-left">
@@ -59,13 +64,12 @@ const Skills = () => {
           <p>These are the  technologies i'v worked with. </p>
         </div>
         <div className="skillbottom">
-          {data.map((item)=>(
-
+          {data.map((item) => (
             <div className="skillitem" key={item.id}>
-            <img src={item.img} alt="Loading..." />
-            <span>{item.title}</span>
-          </div>
-            ))}
+              <img src={item.img} alt="Loading..." />
+              <span>{item.title}</span>
+            </div>
+          ))}
         </div>
       </div>
     </div>

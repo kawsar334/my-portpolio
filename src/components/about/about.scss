@@ -2,10 +2,13 @@
 @import "../../global.scss";
 
 .about{
+    width: 100%;
+ 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0px 10px;
     
     .aboutwrapper{
         display: flex;
@@ -17,6 +20,7 @@
             flex-direction: column;
             width: 100%;
             gap: 0px;
+            height: max-content;
         }
         
         .aboutleft{
@@ -58,9 +62,8 @@
             }
             .desc{
                 @include mobile{
-                    font-size: 14px;
+                    font-size: 13px;
                     overflow: hidden;
-
                 }
             }
             hr{
@@ -79,10 +82,16 @@
                 flex-direction: column;
                 gap: 5px;
                 overflow: hidden;
+                
+                @include mobile{
+                    gap: 0;
+
+                }
 
                 .item{
                     padding: 5px 0px;
                     border-bottom: 1px solid $lightgray;
+                    
                     @include mobile{
                         border: none;
                         overflow: hidden;
@@ -91,8 +100,8 @@
                         font-size: 25px;
                         color: $crimson;
                         @include mobile{
-                            font-size: 14px;
-                           
+                            font-size: 14px;    
+                            padding: 0px 10px;                       
                            
                         }
                     }
@@ -102,6 +111,7 @@
                             height: max-content !important;
                             font-size: 13px;
                             overflow: hidden;
+                            padding: 5px 10px;
 
                         }
 

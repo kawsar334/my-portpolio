@@ -25,6 +25,10 @@ const Social = () => {
               <span>Phone</span>
           <i class="fa-solid fa-phone"></i>
           </a>
+      <a href="#" target="_blank" className="socialItem linkdin">
+        <span>zoom</span>
+        <i class="fa-solid fa-video"></i>
+      </a>
     </div>
   )
 }

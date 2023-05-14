@@ -21,9 +21,11 @@
             }
         }
         .contactbottom{
+            width: 100%;
             display: flex;
             flex-direction: column;
             gap: 10px;
+            padding: 10px 5px;
             textarea{
                 outline: none;
             }
@@ -36,11 +38,14 @@
             button{
                 padding: 5px 10px;
                 border: 1px solid $lightgray;
-                width: max-content;
+                width: 200px;
                 color: $lightgray;
                 cursor: pointer;
                 background-color: $maincolor;
                 border-radius: 5px;
+                text-align: center;
+                margin: 5px auto;
+
                 &:hover{
                     background-color: transparent;
 
@@ -52,8 +57,7 @@
                 background-color: $maincolor;
                 padding: 5px 10px;
                 text-transform: capitalize;
-
-
+                
             }
         }
     }

@@ -13,44 +13,44 @@ const Projects = () => {
     const [open, setOpen] = useState(false);
     const [desc, setDesc] = useState({})
     const [currentPage, setCurrentPage] = useState(1);
-    const recordPerPage = 6 ;
-    const lastIndex = currentPage * recordPerPage ;
-    const firstIndex = lastIndex - recordPerPage ;
+    const recordPerPage = 4;
+    const lastIndex = currentPage * recordPerPage;
+    const firstIndex = lastIndex - recordPerPage;
     const records = data.slice(firstIndex, lastIndex)
-    const nPage =Math.ceil(data.length / recordPerPage);
-    const numbers= [...Array(nPage +1).keys()].slice(1);
+    const nPage = Math.ceil(data.length / recordPerPage);
+    const numbers = [...Array(nPage + 1).keys()].slice(1);
     const [active, setActive] = useState(false);
     const [marked, setMarked] = useState(1);
-    
+
     const type = [
-        {type:"frontend"},
-        {type:"Fullstack"},
-        {type:"React Native"}
+        { type: "frontend" },
+        { type: "Fullstack" },
+        { type: "React Native" }
     ]
 
 
-    const prevPage = ()=>{
-        if(currentPage !== firstIndex){
-            setCurrentPage(currentPage -1)
+    const prevPage = () => {
+        if (currentPage !== firstIndex) {
+            setCurrentPage(currentPage - 1)
         }
 
     }
-    const changeCurrentPage =(id)=>{
+    const changeCurrentPage = (id) => {
         setCurrentPage(id)
         setMarked(id)
 
     }
-    const nextPage=()=>{
-        if(currentPage !== lastIndex){
-            setCurrentPage(currentPage +1) 
+    const nextPage = () => {
+        if (currentPage !== lastIndex) {
+            setCurrentPage(currentPage + 1)
         }
     }
-    
+
     useEffect(() => {
         AOS.init();
     }, [])
 
-    useEffect(()=>{
+    useEffect(() => {
         switch (selected) {
             case "frontend":
                 setData(frontend);
@@ -64,62 +64,62 @@ const Projects = () => {
             default:
                 setData(frontend)
         }
-    },[selected]);
+    }, [selected]);
 
-    const handleDesc=(item)=>{
+    const handleDesc = (item) => {
         setOpen(!open)
         setDesc(item)
-        
+
     }
-  return (
-    <div className="projects" id="projects">
-        <h1>Projects</h1>
-        {open &&<div className="popup">
-            <Popup  open={open} setOpen={setOpen} desc={desc} />
+    return (
+        <div className="projects" id="projects">
+            <h1>Projects</h1>
+            {open && <div className="popup">
+                <Popup open={open} setOpen={setOpen} desc={desc} />
             </div>}
-        <div className="projectTop">
-              <ul data-aos="fade-left">
-               {type.map((i)=>(
-                   <ProjectList item={i} active={selected === i.type} setSelected={setSelected} key={i.type}/>
-               ))}
-            </ul>
-        </div>
-        <div className="projectbottom">
-           {records.map((item)=>(
-
-               <div className="pitem" data-aos="fade-right">
-
-            <img src={item.img} alt="Loading..." />
-            <div className="desc">
-                <a href="#" className="title">{item.title}</a>
-                <div className="links">
-                    {item.demo && <a href={item.demo}>Demo</a>}
-                     <a href={item.github}>Code</a>
-                </div>
-                <button onClick={()=>handleDesc(item)} className="detailsbtn" >see Details</button>
+            <div className="projectTop">
+                <ul data-aos="fade-left">
+                    {type.map((i) => (
+                        <ProjectList item={i} active={selected === i.type} setSelected={setSelected} key={i.type} />
+                    ))}
+                </ul>
             </div>
-         </div>
-               )) }
+            <div className="projectbottom">
+                {records.map((item) => (
+
+                    <div className="pitem" data-aos="fade-right">
+
+                        <img src={item.img} alt="Loading..." />
+                        <div className="desc">
+                            <a onClick={() => handleDesc(item)} className="title">{item.title}</a>
+                            <div className="links">
+                                {item.demo && <a href={item.demo}>Demo</a>}
+                                <a href={item.github}>Code</a>
+                            </div>
+                            <button onClick={() => handleDesc(item)} className="detailsbtn" >see Details</button>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+            <nav>
+                <ul>
+                    {/* { <li onClick={prevPage}><button className="prev">Prev</button></li>} */}
+                    <li><button>see more projects...</button></li>
+
+                    {
+                        numbers.map((n, i) => (
+                            <li className={marked == n ? "active" : ""} key={n} onClick={() => changeCurrentPage(n)}><button >{n}</button></li>
+                        ))
+                    }
+                    {/* { <li onClick={nextPage}><button className="prev">next</button></li>} */}
+
+                </ul>
+
+            </nav>
+
         </div>
-
-          <nav>
-              <ul>
-                 {/* { <li onClick={prevPage}><button className="prev">Prev</button></li>} */}
-                  <li><button>see more projects...</button></li>
-
-                  {
-                      numbers.map((n, i) => (
-                          <li className={marked ==n? "active" : ""} key={n} onClick={() => changeCurrentPage(n)}><button >{n}</button></li>
-                      ))
-                  }
-                  {/* { <li onClick={nextPage}><button className="prev">next</button></li>} */}
-
-              </ul>
-
-          </nav>
-
-    </div>
-  )
+    )
 }
 
 export default Projects
